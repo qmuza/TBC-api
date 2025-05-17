@@ -3,7 +3,7 @@ flask
 python-dotenv
 werkzeug
 opencv-python
-tensorflow
+tensorflow-cpu
 keras
 joblib
 numpy<2.0.0
