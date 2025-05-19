@@ -1,22 +1,11 @@
 import os
 from flask import Flask, request, jsonify, send_file, make_response
-# from flaskext.mysql import MySQL
 import mariadb
 from dotenv import load_dotenv
 from werkzeug.utils import secure_filename
-from werkzeug.datastructures import FileStorage
-# from keras.api.applications.imagenet_utils import preprocess_input
-from keras.api.models import load_model
-from keras.api.utils import normalize
 import joblib
-import numpy as np  
 import pandas as pd
 import json
-from PIL import Image # Uppercase = PIL
-import io
-from ast import literal_eval
-from helpers.feature_prep import load_image, build_feature
-from helpers.image_processing import blend_image_arr
 from helpers.image_segmentation import preparation
 
 # init app dll
